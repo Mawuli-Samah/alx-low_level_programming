@@ -1,30 +1,41 @@
 #include <stdio.h>
 
 /**
- * main - Prints the first 98 Fibonacci numbers
+ * main - first 50 fibonatchi.
  *
- * Return: Always 0.
+ * Return: void.
  */
 int main(void)
 {
-	int c, boolean, boolean2;
-	long int n1, n2, fn, fn2, n11, n22;
+	unsigned long int i, i0, i1, j, j0, j1, e, e0, e1, y, k;
 
-	n1 = 1;
-	n2 = 2;
-	boolean =  boolean2 = 1;
-	printf("%ld, %ld", n1, n2);
-	for (c = 0; c < 96; c++)
+	i = 1;
+	j = 2;
+	e = i + j;
+
+	printf("%lu, ", i);
+	printf("%lu, ", j);
+	for (y = 3; y < 89; y++)
 	{
-		if (boolean)
-		{
-			fn = n1 + n2;
-			printf(", %ld", fn);
-			n1 = n2;
-			n2 = fn;
-		}
-		else
-		{
-			if (boolean2)
-			{
-				n11 = n1 % 10000000
+		printf("%lu, ", e);
+		i = j;
+		j = e;
+		e = i + j;
+	}
+	j0 = j / 1000000000;
+	j1 = j % 1000000000;
+	e0 = e / 1000000000;
+	e1 = e % 1000000000;
+	for (k = 89; k < 98; k++)
+	{
+		printf("%lu%lu, ", e0, e1);
+		i0 = j0;
+		i1 = j1;
+		j0 = e0;
+		j1 = e1;
+		e0 = i0 + j0 + ((i1 + j1) / 1000000000);
+		e1 = (i1 + j1) % 1000000000;
+	}
+printf("%lu%lu\n", e0, e1);
+	return (0);
+}
