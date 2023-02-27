@@ -2,6 +2,7 @@
 
 /**
  * swap_int - swaps the values of integers
+ * 
  * @a: An integer to swap
  * @b: Abother integer to swap
  * 
@@ -14,5 +15,5 @@ void swap_int(int *a, int *b)
     ip = *a;
     *a = *b;
     *b = ip;
-    
+
 } 
