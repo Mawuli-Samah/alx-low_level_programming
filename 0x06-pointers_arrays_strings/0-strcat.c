@@ -3,27 +3,27 @@
 
 /**
   * _strcat - Concatenates two strings
-  * @mawuli: The destination string
-  * @samah: The source string
+  * @dest: The destination string
+  * @src: The source string
   *
   * Return: A pointer to the resulting string dest
   */
-char *_strcat(char *mawuli, char *samah)
+char *_strcat(char *dest, char *src)
 {
 	int nice = 0, i;
 
-	while (mawuli[nice])
+	while (dest[nice])
 	{
 		nice++;
 	}
 
-	for (i = 0; samah[i] != 0; i++)
+	for (i = 0; src[i] != 0; i++)
 	{
-		mawuli[nice] = samah[i];
+		dest[nice] = src[i];
 		nice++;
 	}
 
-	mawuli[nice] = '\0';
-	return (mawuli);
+	dest[nice] = '\0';
+	return (dest);
 }
 
