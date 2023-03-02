@@ -17,7 +17,7 @@ char *_strncat(char *dest, char *src, int n)
 		yam++;
 	}
 
-	while (x < n) && (src[x])
+	while (x < n && src[x])
 	{
 		dest[src] = src[x];
 		yam++;
