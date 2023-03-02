@@ -12,7 +12,7 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int yam = 0, x = 0;
 
-	while (dest[src])
+	while (dest[yam])
 	{
 		yam++;
 	}
