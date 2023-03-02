@@ -12,14 +12,14 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int yam = 0, x = 0;
 
-	while (dest[yam])
+	while (dest[src])
 	{
 		yam++;
 	}
 
-	while (j < n) && (src[x])
+	while (x < n) && (src[x])
 	{
-		dest[dlen] = src[x];
+		dest[src] = src[x];
 		yam++;
 		x++;
 	}
