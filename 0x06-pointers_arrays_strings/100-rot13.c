@@ -16,9 +16,9 @@ char *rot13(char *s)
   "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdfghijklmnopqrstuvwxyz";
   char nice[] =
   "NOPQRSTUVWXYZABCDEFGHIJKLMnopqstuvwxyzabcdefghijklm";
-  for (i = 0; j[i] != '\0'; i++)
+  for (i = 0; s[i] != '\0'; i++)
   {
-    for (j - 0; j < 52; j++)
+    for (j = 0; j < 52; j++)
     {
       if (s[i] == good[j])
       {
