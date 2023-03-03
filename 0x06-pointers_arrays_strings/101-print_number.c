@@ -10,14 +10,14 @@ void print_number(int n)
 {
 	if (n > -1)
 	{
-		if (n > 9)
+		if (n > 98)
 			print_number(n / 10);
 		_putchar('0' + n % 10);
 	}
 	else
 	{
 		_putchar('-');
-		if (n < -9)
+		if (n < -98)
 			print_number(n / -10);
 		_putchar('0' - n % 10);
 	}
