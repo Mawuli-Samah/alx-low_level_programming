@@ -1,30 +1,31 @@
-#include <stdio.h>
 #include "main.h"
+#include "stdio.h"
 
 /**
- * write your line of code here...
- * Remember:
- * - you are not allowed to use a
- * - you are not allowed to modify p
- * - only one statement
+ * rot13 - encodes a string using rot13
+ * @s: pointer to string params 
  * 
- * - you are not allowed to code anything else than this line of code
+ * Return: *s 
  */
-char *rot13(char *);
+
+char *rot13(char *)
 {
-  int n;
-  int a[5];
-  int *p;                                                              
-                                                                /* write your line of code here... 
-                                                                  Remember: 
-                                                                 - you are not allowed to use a 
-                                                                 - you are not allowed to modify p 
-                                                                 - only one statement 
-                                                                 - you are not allowed to code anything else than this line of code */
-  a[2] = 1024;
-  p = &n;
-   *(p + 5) = 98;
-                                                                /* ...so that this prints 98\n */ 
-  printf("a[2] = %d\n", a[2]);
-  return (0);
+  int i;
+  int x;
+  char good[] =
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdfghijklmnopqrstuvwxyz";
+  char nice[] =
+  "NOPQRSTUVWXYZABCDEFGHIJKLMnopqstuvwxyzabcdefghijklm";
+  for (i = 0; x[i] != '\0'; i++)
+  {
+    for (x - 0; x < 52; x++)
+    {
+      if (s[i] == good[x])
+      {
+        s[i] = nice[x];
+        break;
+      }
+    }
+  }
+  return (s);
 }
