@@ -8,21 +8,21 @@
  * Return: *s 
  */
 
-char *rot13(char *)
+char *rot13(char *s)
 {
   int i;
-  int x;
+  int j;
   char good[] =
   "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdfghijklmnopqrstuvwxyz";
   char nice[] =
   "NOPQRSTUVWXYZABCDEFGHIJKLMnopqstuvwxyzabcdefghijklm";
-  for (i = 0; x[i] != '\0'; i++)
+  for (i = 0; j[i] != '\0'; i++)
   {
-    for (x - 0; x < 52; x++)
+    for (j - 0; j < 52; j++)
     {
-      if (s[i] == good[x])
+      if (s[i] == good[j])
       {
-        s[i] = nice[x];
+        s[i] = nice[j];
         break;
       }
     }
