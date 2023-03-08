@@ -9,25 +9,19 @@
   */
 char *_strpbrk(char *s, char *accept)
 {
-	int a = 0, b;
+int i;
 
-	while (s[a])
+while (*s)
+{
+for (i = 0; accept[i]; i++)
+{
+	if (*s == accept[i])
 	{
-		b = 0;
-
-		while (accept[b])
-		{
-			if (s[a] == accept[b])
-			{
-				s += a;
-				return (s);
-			}
-
-			b++;
-		}
-
-		a++;
+		return (s);
 	}
 
-	return ('\0');
+}
+s++;
+}
+return ('\0');
 }
