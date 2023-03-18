@@ -236,7 +236,6 @@ File: 6-print_numberz.c
     
 7. Smile in the mirror
 mandatory :
-Score: 65.0% (Checks completed: 100.0%)
 Write a program that prints the lowercase alphabet in reverse, followed by a new line.
 
 You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
@@ -254,7 +253,6 @@ File: 7-print_tebahpla.c
     
 8. Hexadecimal
 mandatory :
-Score: 65.0% (Checks completed: 100.0%)
 Write a program that prints all the numbers of base 16 in lowercase, followed by a new line.
 
 You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
@@ -272,7 +270,6 @@ File: 8-print_base16.c
     
 9. Patience, persistence and perspiration make an unbeatable combination for success
 mandatory :
-Score: 65.0% (Checks completed: 100.0%)
 Write a program that prints all possible combinations of single-digit numbers.
 
 Numbers must be separated by ,, followed by a space
