@@ -1,1 +1,1 @@
-This repository contained programming in programming language C.
+This repository contain programming in programming language C.
